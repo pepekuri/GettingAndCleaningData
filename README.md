@@ -1,5 +1,7 @@
-GettingAndCleaningData - Script description
-===========================================
+#Getting And Cleaning Data 
+=========================
+
+##Script description
 
 Step 1. Process Variables: these variables are required in order to run the script because they store the working directory, the file names of the required files 
 and the name of the final tidy data file These variables will be used during the process.
