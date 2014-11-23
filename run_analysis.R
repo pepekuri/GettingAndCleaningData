@@ -99,7 +99,7 @@ dt_col_names <- dt_col_names[ColName %like% ".*mean[(].*|.*st.*|Activity.*|Subje
 df_mean_std <- df_full[, dt_col_names$ColName]
 
 ##########################################################
-## Calculating average, grouping by Subject and Ativity ##
+## Calculating average, grouping by Subject and Activity ##
 ##########################################################
 
 dt_mean_std <- data.table(df_mean_std)
@@ -108,7 +108,7 @@ drops <- c("Subject","Activity", "ActivityId")
 dt_mean_std_2 <- dt_mean_std_2[,!(names(dt_mean_std_2) %in% drops)]
 
 ##########################
-## Creatinf fiinal file ##
+## Creating final file ##
 ##########################
 
 write.table(dt_mean_std_2, file = FinalFile, row.name=FALSE)
