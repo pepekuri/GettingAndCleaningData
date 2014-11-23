@@ -1,6 +1,11 @@
-#Variables Description
+Variable Description
+====================
 
-The average function was applied to the following variables but only for the mean() and std() instances:
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. 
+The only the mean and std variables were taken and the average was calculated grouping by subject and activity.
+
+These signals were used to estimate variables of the feature vector for each pattern:  
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
 tBodyAcc-XYZ
 tGravityAcc-XYZ
@@ -19,3 +24,5 @@ fBodyAccMag
 fBodyAccJerkMag
 fBodyGyroMag
 fBodyGyroJerkMag
+
+The average was calculated only for the mean() and std() variables. 
